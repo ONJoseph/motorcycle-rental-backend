@@ -1,26 +1,31 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./vehicles_rental.jpg" alt="logo" width="256"  height="auto" />
+  <img src="vehicles_rental.jpg" alt="logo" width="400"  height="auto" />
+  <br/><br/>
+
+
   <br/>
+
 </div>
 
-  <h3><b>VEHICLES RENTAL BACKEND</b></h3>
+
+
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [🚀 Live demo](#live-demo)
+- [🛠 Built With](#built-with)
+  - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-  - [Kanban Board](#kanban-board)
+- [Setup](#setup)
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Usage](#usage)
+- [Front end](#Front-end)
+- [Run tests](#run-tests)
+- [📃 Kanban Board](#kanban-board)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -28,114 +33,146 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 VEHICLES RENTAL - BACKEND <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
 
-** VEHICLES RENTAL - BACKEND ** Is a Ruby Backend project for users to rent vehicles, and Admins to create and delete vehicles. Users will have the privilege of viewing the history of vehicles reserved.
+# 📖 Project Name
 
-** The app frontend can be found [here](https://github.com/ONJoseph/vehicles-rental-frontend.git)
+## Vehicles Rental Backend API
+
+## About this project
+
+ 
+This web platform has been meticulously designed to offer users the ability to explore a diverse selection of vehicles, 
+providing them with the freedom to reserve vehicles based on their preferences. Additionally, users can also leverage 
+the platform to list their own vehicles, allowing other users to reserve them and generate extra income.
+To access the full range of features, users are encouraged to register an account, which grants them exclusive access to the website's 
+functionalities using a unique username. The application comprises two main components: the vehicles-rental-back-end and the vehicles-rental-front-end.
+The vehicles-rental-back-end houses the API backend, responsible for managing and retrieving data from the database in response to requests made by the frontend.
+This component is built using the robust Ruby on Rails API framework, ensuring a secure and efficient backend infrastructure.
+
+On the other hand, the vehicles-rental-front-end encompasses the captivating user interface of the website, providing an intuitive platform where users can 
+seamlessly interact with the database. Developed using cutting-edge technologies such as ReactJS and Redux, the frontend offers a seamless and engaging user experience.
+With the powerful combination of a Ruby on Rails API backend and a dynamic ReactJS and Redux frontend, this web application delivers a compelling and 
+feature-rich platform for users to explore, reserve, and list vehicles with utmost convenience and efficiency.
 
 ## 🛠 Built With <a name="built-with"></a>
 
+### Tech Stack <a name="tech-stack"></a>
+
+This project was implemented using:
+
+<details>
+  <summary>Client</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/documentation/">Ruby on Rails</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
+</details>
 
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+  <br/>
+
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Users can view vehicles signup, login and reserve vehicles.**
-- **Admin can login, add and delete vehicles.**
-- **Users can view history of vehicles**
-- **Users can view characteristics of vehicles (price, electric, brand and much more).**
-- **Users can view which vehicles are available for rent and which aren't**
-- **Full stack app**
-- **Styling uses CSS**
+> Key features of the application.
+ 
+ - Introducing a comprehensive full stack web application that empowers users with the ability to register and log in using a unique name, ensuring a personalized and secure experience.
+ - Upon registration, users gain access to a wide range of features, including the ability to seamlessly add, delete, and browse registered vehicles. With a diverse selection of vehicles 
+   available, users have the freedom to reserve any vehicles that suits their preferences.
+ - To ensure a smooth user experience, the application provides publicly accessible API endpoints such as /api/v1/vehicles/ and /api/v1/vehicles/:id, enabling users to explore available vehicles effortlessly. 
+   Additionally, private API endpoints like /api/v1/reservations/:name are exclusively accessible to logged-in users, offering them the privilege to manage their reservations securely.
+ - Privacy is of utmost importance, and each user's reservation data remains confidential and inaccessible to others. Robust security measures are implemented to safeguard user information and ensure that data privacy is upheld at all times.
+ - The API itself is designed to deliver an exceptional user experience, returning specific error messages meticulously organized for different types of bad requests. This thoughtful approach enhances the overall usability and helps users easily identify and resolve any issues they may encounter.
+ - The website user interface follows carefully crafted design guidelines, ensuring an intuitive and visually appealing experience for users  [design guidelines](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
+. The interface is designed with user convenience in mind, enabling effortless navigation and seamless interaction with the application's functionalities.
+ - Experience the power of this full stack web application, where user registration, vehicle management, and secure reservations are seamlessly integrated to provide a truly exceptional and personalized user experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Key Features <a name="key-features"></a>
+<!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 Getting Started
+To clone the repository in local environment try following steps.
 
-To get a local copy up and running, follow these steps:
+### Prerequisites
 
-### Prerequisites <a name="prerequisites"></a>
+- [x] A code editor like Visual Studio Code with Git, Ruby, and Gem.
 
-In order to run this project you need:
-
-- [Ruby](https://www.ruby-lang.org/en/) installed and running
-- [PostgreSQL](https://www.postgresql.org/) installed
-- [RubyonRails](https://rubyonrails.org/) installed
-
-### Setup <a name="setup"></a>
-
-Clone this repository to your desired folder:
-
-``` bash
-git clone https://github.com/ONJoseph/vehicles-rental-backend.git
+You can check if Git is installed by running the following command in the terminal.
 ```
-and then move to the folder: 
-
-```bash
-cd vehicles-rental-backend
+$ git --version
 ```
+Likewise for `Ruby` and `gem` for package installation.
+```
+$ ruby --version && gem --version
+```
+**Note: This project is built with `Ruby` version ~> 3.0**
+### Setup
+
+Clone the repository using [this link](https://github.com/ONJoseph/vehicles-rental-backend.git).
+
+### Install
+
+In the terminal, go to your file directory and run this command.
+```
+$ git clone https://github.com/ONJoseph/vehicles-rental-backend.git
+```
+### Get into development
+
+In the terminal, run these commands to get into development.
+```
+$ cd vehicles-rental-backend
+
+$ bundle init
+
+$ bundle install (install dependencies)
+```
+**Note: You might need to update [database.yml](./config/database.yml) for development and testing environments with necessary username and password for your database in their respective positions.**
+
+### Usage <a href="usage" name="usage"></a>
+
+This website is applicable for both mobile and desktop version.
+```
+$ rails db:create
+
+$ rails db:migrate
+
+$ rails db:seed
+
+$ rails server
+```
+<!--  -->
+
+## 🚀 Front end  <a name="Front-end"></a>
+
+Once the rails server is running, please follow the next link to start the front end application.
+
+[Link Front end](https://github.com/ONJoseph/vehicles-rental-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Install <a name="install"></a>
+ <!-- Kanban Board -->
+ 
+ ## 📃 Kanban Board <a name="kanban-board"></a>
 
-Install dependancies with:
+ The Kanban Board made for this project can be found [here](https://github.com/users/ONJoseph/projects/5).
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```bash
-bundle install
-```
-### Usage <a name="usage"></a>
-
-In order to run the project please follow the next steps to create your credentials|masterkey pair:
-
-1. Delete config/master.key and config/credentials.yml.enc if they exist.
-2. Run in the terminal: `EDITOR=code rails credentials:edit`
-3. This command will create a new master.key and credentials.yml.enc if they do not exist.
-
-```console
-bundle exec rails db:create
-bundle exec rails db:migrate
-bundle exec rails db:seed
-bundle exec rails start
-```
-then go to [http://localhost:300](http://localhost:300)
-
-Users to log in into the app:
-```
-admin: admin@admin.com
-password: 123456
-
-user: diego@gmail.com
-password: 123456
-```
-
-### Run tests <a name="run-tests"></a>
-
-To run tests, run the following command:
-
-```sh
-rspec spec/models/ // to test models
-rspec spec/requests/api/v1  // to test controllers
-```
-
-### Deployment <a name="deployment"></a>
-
-- [Watch me in action ]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Kanban Board <a name="kanban-board"></a>
-  - Initial state of Kanban [Board](https://github.com/users/ONJoseph/projects/5)
-  - <img src="./vehicles_kanban.png" alt="kanbanBoard" width="256"  height="auto" />
-    <br/>
-  - Number of team members at start and finish: 5 Team members.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -144,7 +181,7 @@ rspec spec/requests/api/v1  // to test controllers
 - GitHub: [@ONJoseph](https://github.com/ONJoseph)
 - Twitter: [@ONJoseph1](https://twitter.com/ONJoseph1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/o-n-joseph-ba8425147/)
-
+ 
 👤 **Ivan Martinez von Halle**
 
 - GitHub: [@ivanmvh](https://github.com/ivanmvh)
@@ -158,41 +195,44 @@ rspec spec/requests/api/v1  // to test controllers
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add price to reservation**
-- **Add plac-id to vehicles**
+- [ ] **Add animation to create smooth user experience.**
+- [ ] **Enable only admin users to add or delete vehicles.**
+- [ ] **Implement proper user authentication from the front-end to the server.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
+
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome! Add suggestions by opening new issues.
 
 Feel free to check the [issues page](https://github.com/ONJoseph/vehicles-rental-backend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
+
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give it a star.
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- [Microverse Team and classmates](https://www.microverse.org/).
+Authors would like to thank:
+- [Murat Korkmaz](https://www.behance.net/muratk)
+- [Microverse](https://www.microverse.org/)
+- Code Reviewers
+- Coding Partners
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ <a name="faq"></a>
-
-- **Can I use this project for personal use?**
-
-  - Sure, if you want to talk about something specific, feel free to send me a direct message. <br><br>
- 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
