@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./vehicles_rental" alt="logo" width="256"  height="auto" />
+  <img src="./vehicles_rental.jpg" alt="logo" width="256"  height="auto" />
   <br/>
 </div>
 
