@@ -130,8 +130,8 @@ rspec spec/requests/api/v1  // to test controllers
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Kanban Board <a name="kanban-board"></a>
-  - Initial state of Kanban [Board](https://github.com/users/gjuliao/projects/2)
-  - <img src="./public/kanbanStart.png" alt="kanbanBoard" width="256"  height="auto" />
+  - Initial state of Kanban [Board](https://github.com/users/ONJoseph/projects/5)
+  - <img src="./vehicles_kanban.png" alt="kanbanBoard" width="256"  height="auto" />
     <br/>
   - Number of team members at start and finish: 5 Team members.
 
