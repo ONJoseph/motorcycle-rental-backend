@@ -24,11 +24,11 @@ class Reservation < ApplicationRecord
   def vehicle_available_on_dates
     return unless vehicle
 
-    conflicts = vehicle.reservations.where.not(id: self.id).where(
+    conflicts = vehicle.reservations.where.not(id:).where(
       '(start_date <= :start_date AND return_date >= :start_date) OR ' \
       '(start_date <= :return_date AND return_date >= :return_date) OR ' \
       '(start_date >= :start_date AND return_date <= :return_date)',
-      start_date: start_date, return_date: return_date
+      start_date:, return_date:
     )
 
     errors.add(:vehicle, 'is already rented for the provided dates!') if conflicts.any?

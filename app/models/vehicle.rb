@@ -4,7 +4,7 @@ class Vehicle < ApplicationRecord
   validates :image, presence: true
   validates :price, numericality: { greater_than_or_equal_to: 0 }
   validates :accidents, numericality: { greater_than_or_equal_to: 0 }
-  
+
   def as_json(options = {})
     super(options.merge(
       only: %i[id model image description price brand year color accidents is_electric]
