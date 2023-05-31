@@ -1,5 +1,5 @@
 class Api::V1::VehiclesController < ApplicationController
-  before_action :set_vehicle, only: [:show, :edit, :update, :destroy]
+  before_action :set_vehicle, only: %i[show edit update destroy]
 
   def index
     @vehicles = Vehicle.all
@@ -49,6 +49,7 @@ class Api::V1::VehiclesController < ApplicationController
   end
 
   def vehicle_params
-    params.require(:vehicle).permit(:model, :picture, :description, :price, :brand, :year, :color, :registration_plate, :accidents)
+    params.require(:vehicle).permit(:model, :picture, :description, :price, :brand, :year, :color, :registration_plate,
+                                    :accidents)
   end
 end
