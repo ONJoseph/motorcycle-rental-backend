@@ -8,6 +8,8 @@
 User.create(name: 'Admin')
 first_user = User.create(name: 'Joseph Ogbole')
 second_user = User.create(name: 'Diego C')
+third_user = User.create(name: 'John')
+fourth_user = User.create(name: 'Grace')
 
 # Seed some Vehicles for testing purposes
 first_vehicle = Vehicle.create(
@@ -105,3 +107,18 @@ sixth_vehicle = Vehicle.create(
   registration_plate: 'PQR678',
   accidents: 0
 )
+
+# Create some reservations for each vehicle
+users = [first_user, second_user, third_user, fourth_user]
+vehicles = [first_vehicle, second_vehicle, third_vehicle, fourth_vehicle, fifth_vehicle, sixth_vehicle]
+
+reservation1 = Reservation.create(start_date: '2023/05/09', return_date: '2023/05/12', user: User.first, vehicle: Vehicle.first, city: 'Lagos')
+reservation2 = Reservation.create(start_date: '2023/05/13', return_date: '2023/05/15', user: User.second, vehicle: Vehicle.second, city: 'Lima')
+
+# Conflict reservation
+reservation3 = Reservation.create(start_date: '2023/06/01', return_date: '2023/06/12', user: User.second, vehicle: Vehicle.second, city: 'Pereira')
+# reservation4 = Reservation.create(start_date: '2023/06/02', return_date: '2023/06/13', user: User.first, vehicle: Vehicle.second, city: 'Pereira')
+# Return date greater than start date
+# reservation5 = Reservation.create(start_date: '2023/05/20', return_date: '2023/05/19', user: User.second, vehicle: Vehicle.third, city: 'Trujillo')
+# Updated to busy date
+reservation16 = Reservation.create(start_date: '2023/06/09', return_date: '2023/06/12', user: User.first, vehicle: Vehicle.first, city: 'Loja')
