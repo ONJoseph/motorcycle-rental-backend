@@ -13,96 +13,90 @@ fourth_user = User.create(name: 'Grace')
 
 # Seed some Vehicles for testing purposes
 first_vehicle = Vehicle.create(
-  model: '2018 Jaguar F-Type Coupe',
-  picture: 'https://simaautoservice.se/wp-content/uploads/2021/07/car-picture-transparent-background-8.png',
-  description: 'The 2018 Jaguar F-Type Coupe is a luxury sports car that boasts sleek and stylish design, \
-    exceptional performance, and advanced technology features.\n\nUnder the hood, it has a range of engine \
-    options, including a base 2.0-liter turbocharged four-cylinder engine that produces 296 horsepower \
-    and 295 lb-ft of torque, a 3.0-liter supercharged V6 engine that delivers 340 horsepower and 332 \
-    lb-ft of torque, and a top-of-the-line 5.0-liter supercharged V8 engine that generates 575 horsepower \
-    and 516 lb-ft of torque.',
-  price: 550,
-  brand: 'Land Rover',
-  year: '2018-01-01',
-  color: 'Gray',
+  model: '2023 Tesla Model S',
+  picture: 'https://www.vippng.com/png/full/44-440423_model-png.png',
+  description: 'The 2023 Tesla Model S is an all-electric luxury sedan that combines impressive performance, \
+    cutting-edge technology, and elegant design. It is equipped with dual electric motors that deliver instant \
+    acceleration and a long-range battery pack that offers an impressive driving range. The Model S features a \
+    minimalist interior with a large touchscreen display and advanced driver-assistance features for enhanced safety.',
+  price: 900,
+  brand: 'Tesla',
+  year: '2023-01-01',
+  color: 'Black',
   registration_plate: 'ABC123',
   accidents: 0
 )
 
 second_vehicle = Vehicle.create(
-  model: '2020 Jaguar F-Type Coupe',
-  picture: 'https://carprices.ae/wp-content/uploads/2022/04/2021-Jaguar-F-Type-Coupe-Banner.png',
-  description: 'The 2020 Jaguar F-Type Coupe is a luxurious and sporty two-door coupe that exudes elegance and \
-  high performance.\n\nThe car is equipped with a range of powertrain options, including a base 2.0-liter \
-  turbocharged four-cylinder engine that produces 296 horsepower and 295 lb-ft of torque, a 3.0-liter supercharged \
-  V6 engine that delivers 340 horsepower and 332 lb-ft of torque, and a top-of-the-line 5.0-liter supercharged V8 \
-  engine that generates 575 horsepower and 516 lb-ft of torque. The engines are mated with an eight-speed automatic \
-  transmission, which can be controlled via paddle shifters mounted on the steering wheel.',
-  price: 650,
-  brand: 'Land Rover',
-  year: '2020-01-01',
-  color: 'Light gray',
+  model: '2023 BMW 3 Series',
+  picture: 'https://purepng.com/public/uploads/large/purepng.com-white-bmw-x3-carcarbmwvehicletransport-961524661340tuwek.png',
+  description: 'The 2023 BMW 3 Series is a luxury compact sedan that offers a perfect blend of style, performance, \
+    and comfort. It features a range of powerful engines, including turbocharged four-cylinder and six-cylinder options, \
+    delivering responsive acceleration and smooth handling. The 3 Series boasts a refined interior with premium materials, \
+    advanced infotainment system, and driver-assistance technologies for a luxurious driving experience.',
+  price: 750,
+  brand: 'BMW',
+  year: '2023-01-01',
+  color: 'White',
   registration_plate: 'DEF456',
   accidents: 0
 )
 
 third_vehicle = Vehicle.create(
-  model: '2010 Audi TT RS Coupe',
-  picture: 'https://www.freepnglogos.com/uploads/car-png/car-png-large-pictures-40.png',
-  description: 'The 2010 Audi TT RS Coupe is a high-performance sports car that delivers an exhilarating driving \
-    experience. It is powered by a 2.5-liter five-cylinder engine that produces an impressive 335 horsepower and \
-    332 lb-ft of torque. This engine is paired with a six-speed manual transmission and all-wheel drive, providing \
-    excellent handling and grip on the road.\n\nThe exterior of the TT RS Coupe is sleek and stylish, with a low \
-    profile and a distinctive front grille. Inside, the cabin is well-appointed with high-quality materials and \
-    advanced technology. Standard features include leather upholstery, automatic climate control, and a premium audio system.',
-  price: 450,
-  brand: 'Audi',
-  year: '2010-01-01',
-  color: 'Red',
+  model: '2023 Mercedes-Benz E-Class',
+  picture: 'https://purepng.com/public/uploads/large/51506279619zqpgkosu9sqb394pfu7o7fwxbcvkjteqqgvopsnd1gmwl6uw8yao504kgoxwmzv9vtfuatlovqzgtintvuqhf1nzwyv7u1n1t0gf.png',
+  description: 'The 2023 Mercedes-Benz E-Class is a sophisticated and luxurious midsize sedan that offers exceptional \
+    comfort, advanced technology, and a range of powerful engine options. It features a stylish exterior design, a \
+    meticulously crafted interior with high-quality materials, and innovative features like the MBUX infotainment system \
+    and driver-assistance systems for a safe and enjoyable driving experience.',
+  price: 850,
+  brand: 'Mercedes-Benz',
+  year: '2023-01-01',
+  color: 'Silver',
   registration_plate: 'GHI789',
   accidents: 1
 )
 
 fourth_vehicle = Vehicle.create(
-  model: '2014 VW Beetle Dune',
-  picture: 'https://i.pinimg.com/originals/60/c6/05/60c6052cecf20a380007a5b1be98b68f.png',
-  description: 'The 2014 VW Beetle Dune is a special edition of the iconic VW Beetle that offers a unique and \
-    distinctive look. The Dune is inspired by the classic Baja Bugs, which were popular in off-road racing in \
-    the 1960s and 1970s. The Dune has a raised ride height, wider body, and unique front and rear bumpers, \
-    giving it a rugged and sporty appearance.',
-  price: 350,
-  brand: 'Volkswagen',
-  year: '2014-01-01',
-  color: 'Yellow',
+  model: '2023 Porsche 911 Carrera',
+  picture: 'https://purepng.com/public/uploads/large/purepng.com-red-porsche-911-gt3-rs-4-carcarvehicletransportporsche-961524661235vbivb.png',
+  description: 'The 2023 Porsche 911 Carrera is an iconic sports car that offers exhilarating performance and timeless design. \
+    It is powered by a range of powerful engines, including turbocharged flat-six options, delivering impressive acceleration \
+    and precise handling. The 911 Carrera features a driver-focused cockpit, advanced aerodynamics, and innovative technology \
+    to provide an unmatched driving experience.',
+  price: 1100,
+  brand: 'Porsche',
+  year: '2023-01-01',
+  color: 'Red',
   registration_plate: 'JKL012',
   accidents: 0
 )
 
 fifth_vehicle = Vehicle.create(
-  model: '2004 Hummer H2',
-  picture: 'https://www.freepngimg.com/thumb/car/31469-4-car-transparent-picture.png',
-  description: 'The 2004 Hummer H2 is a powerful and rugged SUV known for its off-road capabilities. It features \
-    a 6.0-liter V8 engine that delivers 316 horsepower and 360 lb-ft of torque. The H2 is built on a heavy-duty \
-    truck platform, providing excellent durability and towing capacity. With its distinctive design and imposing \
-    presence, the Hummer H2 is a true icon of the SUV world.',
-  price: 1000,
-  brand: 'Hummer',
-  year: '2004-01-01',
-  color: 'Victory Red',
+  model: '2023 Audi Q5',
+  picture: 'https://images.dealer.com/ddc/vehicles/2020/Audi/Q5%20e/SUV/perspective/front-left/2020_24.png',
+  description: 'The 2023 Audi Q5 is a luxury compact SUV that combines versatility, comfort, and advanced technology. \
+    It offers a range of powerful engines, including turbocharged four-cylinder and V6 options, delivering both efficiency \
+    and performance. The Q5 features a spacious and luxurious interior, state-of-the-art infotainment system, and a host \
+    of driver-assistance features for a refined and connected driving experience.',
+  price: 800,
+  brand: 'Audi',
+  year: '2023-01-01',
+  color: 'Blue',
   registration_plate: 'MNO345',
   accidents: 0
 )
 
 sixth_vehicle = Vehicle.create(
-  model: '2015 Audi Sport Quattro',
-  picture: 'https://purepng.com/public/uploads/large/purepng.com-yellow-audi-caraudicars-961524670899johme.png',
-  description: 'The 2015 Audi Sport Quattro is a high-performance sports car that offers a thrilling driving \
-    experience. It is powered by a 4.0-liter turbocharged V8 engine that produces an impressive 552 horsepower \
-    and 516 lb-ft of torque. This engine is paired with an eight-speed automatic transmission and all-wheel drive, \
-    providing excellent handling and acceleration on the road.',
-  price: 700,
-  brand: 'Audi',
-  year: '2015-01-01',
+  model: '2023 Ford Mustang',
+  picture: 'https://pngimg.com/uploads/mustang/mustang_PNG27.png',
+  description: 'The 2023 Ford Mustang is an iconic American muscle car known for its powerful performance and classic design. \
+    It is available with a range of engine options, including V6, EcoBoost, and V8 variants, delivering exhilarating power and \
+    speed. The Mustang features a stylish and aggressive exterior, a driver-focused cockpit, and advanced technology for a \
+    thrilling driving experience.',
+  price: 950,
+  brand: 'Ford',
+  year: '2023-01-01',
   color: 'Yellow',
   registration_plate: 'PQR678',
   accidents: 0
